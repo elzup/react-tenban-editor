@@ -42,10 +42,10 @@ const useEditor = (ref: RefObject<Element>, defaultMarkers: MarkerProps[]) => {
       ...state,
       [grabMarker.id]: {
         ...grabMarker,
-        x1: grabMarker.x1 - (dragState.diffPos.x as number),
-        y1: grabMarker.y1 - (dragState.diffPos.y as number),
-        x2: grabMarker.x2 - (dragState.diffPos.x as number),
-        y2: grabMarker.y2 - (dragState.diffPos.y as number),
+        x1: grabMarker.x1 - dragState.diffPos.x,
+        y1: grabMarker.y1 - dragState.diffPos.y,
+        x2: grabMarker.x2 - dragState.diffPos.x,
+        y2: grabMarker.y2 - dragState.diffPos.y,
       },
     }))
   }, [pos])
