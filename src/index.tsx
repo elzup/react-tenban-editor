@@ -1,23 +1,32 @@
 /**
- * @class ExampleComponent
+ * @class TenbanEditor
  */
 
 import * as React from 'react'
 
 import styles from './styles.css'
+import useEditor from './hooks/useEditor'
+import { Marker } from './types'
 
 export type Props = { text: string }
 
-export default class ExampleComponent extends React.Component<Props> {
-  render() {
-    const {
-      text
-    } = this.props
+export default function TenbanEditor(props: Props) {
+  const { text } = props
+  const ref = React.useRef<HTMLDivElement | null>(null)
 
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
+  const defaultMarkers: Marker[] = []
+
+  useEditor({
+    ref,
+    defaultMarkers,
+    onMarkerChanged: () => {
+      console.log('called')
+    },
+  })
+
+  return (
+    <div className={styles.test} ref={ref}>
+      {text}
+    </div>
+  )
 }

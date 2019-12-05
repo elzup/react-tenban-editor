@@ -39,6 +39,6 @@ export default {
       clean: true,
     }),
     commonjs(),
-    eslint(),
+    eslint({ throwOnWarning: true }),
   ],
 }
