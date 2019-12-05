@@ -1,6 +1,6 @@
 {
-  "name": "react-tenban-example",
-  "homepage": "https://elzup.github.io/react-tenban",
+  "name": "react-tenban-editor-example",
+  "homepage": "https://elzup.github.io/react-tenban-editor",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -9,7 +9,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4",
-    "react-tenban": "link:.."
+    "react-tenban-editor": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

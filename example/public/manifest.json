@@ -1,6 +1,6 @@
 {
-  "short_name": "react-tenban",
-  "name": "react-tenban",
+  "short_name": "react-tenban-editor",
+  "name": "react-tenban-editor",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",
