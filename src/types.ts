@@ -1,5 +1,8 @@
-export type Marker = {
-  x: number
-  y: number
+export type MarkerProps = {
+  id: string
+  x1: number
+  y1: number
+  x2: number
+  y2: number
   z?: number
 }
